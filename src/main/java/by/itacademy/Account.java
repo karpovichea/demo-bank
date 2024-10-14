@@ -18,4 +18,13 @@ public class Account {
     public double getInterest(double percentageRate) {
         return balance * percentageRate / 100.00;
     }
+
+    @Override
+    public String toString() {
+        return "Account{" +
+                "name='" + name + '\'' +
+                ", address='" + address + '\'' +
+                ", balance=" + balance +
+                '}';
+    }
 }
